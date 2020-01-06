@@ -1,0 +1,41 @@
+.site-list {
+  @media (min-width: $screen-lg) {
+    display: flex;
+    order: 2;
+    width: 800px;
+  }
+}
+
+.site-list__link {
+  display: block;
+
+  margin: 0;
+  padding: 8px 10px 8px 0;
+
+  font-weight: 700;
+  font-size: 12px;
+  color: $black;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-md) {
+    padding: 14px 20px 14px 0;
+
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 2;
+
+    padding: 13px 29px 18px;
+
+    &:hover {
+      color: $white;
+      background-color: #84c604;
+    }
+  }
+}

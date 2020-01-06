@@ -1,0 +1,150 @@
+.menu-user {
+  @media (min-width: $screen-lg) {
+    margin-left: auto;
+    padding-top: 23px;
+
+    display: flex;
+
+    width: 900px;
+  }
+}
+
+.menu-user__link-phone {
+  @media (min-width: $screen-lg) {
+    order: 3;
+
+    margin-right: 28px;
+  }
+}
+
+.menu-user__text-phone {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 2px;
+
+    font-size: 18px;
+    letter-spacing: -0.2px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin: 0;
+  }
+}
+
+.menu-user__office-hours {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  display: block;
+
+  font-size: 10px;
+  line-height: 12px;
+  color: $black;
+  letter-spacing: -0.1px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 27px;
+  }
+}
+
+.menu-user__callback {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+
+  width: 140px;
+
+  color: $green;
+  text-align: center;
+
+  border: 1px solid $green;
+  border-radius: 5px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 28px;
+    padding: 11px 5px;
+
+    width: 170px;
+
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 4;
+    align-self: flex-start;
+
+    margin: 0;
+  }
+}
+
+.menu-user__addres {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 10px;
+
+  font-size: 11px;
+  line-height: 13px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 18px;
+    padding-left: 16px;
+
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.6px;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 1;
+
+    margin: 0;
+    margin-right: 145px;
+    padding-top: 13px;
+    padding-left: 22px;
+  }
+}
+
+.menu-user__email {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+
+  font-size: 11px;
+  line-height: 13px;
+
+  @media (min-width: $screen-md) {
+    padding-left: 18px;
+
+    letter-spacing: 0.6px;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 2;
+
+    margin-right: 75px;
+    padding-top: 13px;
+    padding-left: 27px;
+  }
+}
+
+.m-b {
+  @media (min-width: $screen-lg) {
+    margin-bottom: 15px;
+  }
+}

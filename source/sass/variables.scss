@@ -1,0 +1,51 @@
+// Базовая типографика
+
+
+$font-family: "OpenSans", "Arial", sans-serif;
+$font-family-secondary: "Roboto Slab", "Arial", sans-serif;
+
+$font-size:                   14px;
+$line-height:                 20px;
+
+
+// Семантические цвета
+
+
+$text-color:                  #4c4c4c;
+$body-bg:                     #ffffff;
+$grey:                        #999999;
+$grey-dark:                   #4c4c4c;
+$black:                       #000000;
+$white:                       #ffffff;
+$blue-light:                  #6b96a5;
+$blue:                        #5e81a7;
+$blue-dark:                   #32505a;
+$orange:                      #fd4f10;
+$green:                       #4ec83d;
+$green-light:                 #84c604;
+
+
+// Ширины
+
+$screen-xs:                   0;
+$screen-sm:                   320px;
+$screen-md:                   765px;
+$screen-lg:                   1170px;
+
+$container-sm:                100%;
+$container-md:                100%;
+$container-lg:                $screen-lg - 30;
+
+
+// Модульная сетка
+
+$grid-columns:                12;
+$grid-gutter-width:           30px;
+
+
+// Ретина
+
+$retina-dpi:                  144dpi;
+$retina-dppx:                 1.5dppx;
+
+$mobile-width-only:           1169px;
