@@ -3,7 +3,7 @@
   var promoSlider = promo.querySelector(".promo__slider");
   var buttonPrevious = promo.querySelector(".promo__button--prev");
   var buttonNext = promo.querySelector(".promo__button--next");
-  var pagination = promo.querySelector(".swiper-pagination");
+  var pagination = promo.querySelector(".promo-pagination");
 
   var promoSwiper = new Swiper(promoSlider, {
     slidesPerView: 1,

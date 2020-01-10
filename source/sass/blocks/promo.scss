@@ -1,6 +1,18 @@
 .promo {
+  margin-bottom: 27px;
+
   width: 100%;
   max-width: 100%;
+
+  background-color: #2a2031;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 80px;
+  }
 }
 
 .promo__wrapper {
@@ -14,8 +26,6 @@
 .promo__slider {
   position: relative;
 
-  padding-bottom: 45px;
-
   width: 100%;
   max-width: 100%;
 
@@ -26,7 +36,7 @@
 
 .promo__slide {
   position: relative;
-  padding: 40px 15px 62px;
+  padding: 32px 15px 62px;
 
   width: 100%;
   max-width: 100%;
@@ -41,7 +51,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    padding-top: 122px;
+    padding-top: 128px;
     min-height: 676px;
   }
 }
@@ -71,32 +81,34 @@
 
   width: 290px;
 
-  font-size: 39px;
-  line-height: 52px;
+  font-size: 46px;
+  line-height: 57px;
   color: $green;
+  letter-spacing: -3px;
 
   @media (min-width: $screen-md) {
     margin-bottom: 30px;
 
     width: 430px;
 
-    font-size: 59px;
+    font-size: 67px;
     line-height: 84px;
   }
 
   @media (min-width: $screen-lg) {
-    margin-bottom: 53px;
+    margin-bottom: 47px;
 
     width: 555px;
 
     font-size: 93px;
     line-height: 105px;
+    letter-spacing: 0;
   }
 }
 
 .promo__discount {
   position: absolute;
-  top: 43px;
+  top: 52px;
   right: 5px;
 
   display: flex;
@@ -128,7 +140,7 @@
 
 
   @media (min-width: $screen-lg) {
-    top: -6px;
+    top: -13px;
     right: 418px;
 
     width: 140px;
@@ -159,7 +171,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
 
     font-size: 26px;
     line-height: 28px;
@@ -216,7 +228,7 @@
     width: 100%;
     height: 100%;
 
-    background-color: white;
+    background-color: $white;
     opacity: 0.05;
   }
 }
@@ -282,5 +294,25 @@
         transform: rotate(230deg) translateY(45%);
       }
     }
+  }
+}
+
+.promo__pagination-wrap {
+  position: relative;
+
+  min-height: 45px;
+
+  background-color: $white;
+
+
+  @media (min-width: $screen-md) {
+    position: absolute;
+
+    bottom: 25px;
+
+    width: 100%;
+    min-height: 20px;
+
+    background-color: rgba(42, 32, 49, 0);
   }
 }

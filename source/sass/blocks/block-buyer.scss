@@ -3,10 +3,13 @@
   flex-wrap: wrap;
 
   margin-left: auto;
+  margin-top: 13px;
 
-  width: 70px;
+  width: 67px;
 
   @media (min-width: $screen-md) {
+    margin-top: 30px;
+
     width: 85px;
   }
 
@@ -33,7 +36,7 @@
   position: relative;
 
   margin-bottom: 5px;
-  margin-right: 20px;
+  margin-right: 17px;
 
   font-size: 0;
   color: transparent;
@@ -66,4 +69,173 @@
     width: auto;
     height: auto;
   }
+
+  &--cabinet::before {
+    content: "";
+    position: absolute;
+
+    width: 22px;
+    height: 22px;
+
+    background: url("../img/sprite.png") no-repeat;
+    background-position: -5px -907px;
+
+    @media (min-width: $screen-lg) {
+      left: 0;
+    }
+  }
+
+  &--basket {
+    fill: $green;
+  }
 }
+
+.block-buyer__icon {
+  @media (min-width: $screen-lg) {
+    position: absolute;
+    top: 13px;
+    left: 0;
+  }
+}
+
+.block-buyer__number {
+  @media (min-width: $screen-lg) {
+    position: absolute;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    top: 11px;
+    left: 16px;
+
+    width: 10px;
+    height: 10px;
+
+    font-size: 8px;
+    font-size: 10px;
+    color: $white;
+
+    background-color: $orange;
+    border-radius: 2px;
+  }
+}
+
+/*
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-dish {
+    width: 77px;
+    height: 62px;
+    background-position: -5px -5px;
+}
+
+.sprite-facebook {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -77px;
+}
+
+.sprite-feather {
+    width: 64px;
+    height: 68px;
+    background-position: -5px -110px;
+}
+
+.sprite-fire {
+    width: 20px;
+    height: 26px;
+    background-position: -5px -188px;
+}
+
+.sprite-fish {
+    width: 86px;
+    height: 58px;
+    background-position: -5px -224px;
+}
+
+.sprite-heart {
+    width: 19px;
+    height: 15px;
+    background-position: -5px -292px;
+}
+
+.sprite-instagram {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -317px;
+}
+
+.sprite-kitchen {
+    width: 68px;
+    height: 64px;
+    background-position: -5px -350px;
+}
+
+.sprite-like {
+    width: 61px;
+    height: 64px;
+    background-position: -5px -424px;
+}
+
+.sprite-money {
+    width: 75px;
+    height: 60px;
+    background-position: -5px -498px;
+}
+
+.sprite-noun {
+    width: 92px;
+    height: 66px;
+    background-position: -5px -568px;
+}
+
+.sprite-octopus {
+    width: 72px;
+    height: 62px;
+    background-position: -5px -644px;
+}
+
+.sprite-pizza {
+    width: 62px;
+    height: 72px;
+    background-position: -5px -716px;
+}
+
+.sprite-rice {
+    width: 64px;
+    height: 73px;
+    background-position: -5px -798px;
+}
+
+.sprite-trumpet {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -881px;
+}
+
+.sprite-user {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -905px;
+}
+
+.sprite-v {
+    width: 25px;
+    height: 16px;
+    background-position: -5px -937px;
+}
+
+.sprite-vkontakte {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -963px;
+}
+*/

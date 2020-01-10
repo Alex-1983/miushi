@@ -1,0 +1,101 @@
+.field-num {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.field-num__name {
+  display: block;
+  margin-bottom: .4em;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.field-num__input-wrap {
+  display: block;
+}
+
+.field-num__input-and-btns {
+  position: relative;
+  display: block;
+
+  width: 65px;
+}
+
+.field-num__btn {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+
+  padding: 0;
+
+  width: 13px;
+
+  border: 1px solid #8d8d8d;
+  border-radius: 50%;
+
+
+  color: transparent;
+  background: 0 0;
+  overflow: visible;
+  text-transform: none;
+  touch-action: manipulation;
+
+  &--minus {
+    left: 1px;
+  }
+
+  &--plus {
+    right: -10px;
+  }
+}
+
+.field-num__input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  min-height: calc(1.5em + 5px + 5px + 2px);
+  margin: 0;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  padding: 5px 12px;
+  line-height: 1.5;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #fff;
+  padding: 5px 45px;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: textfield;
+}
+
+.field-num__help-text {
+  display: block;
+  padding-top: .4em;
+  font-size: .75em;
+  line-height: 1.2em;
+  color: gray;
+}
+
+.field-num {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.field-num__input-and-btns {
+  position: relative;
+  display: block;
+  width: 140px;
+}

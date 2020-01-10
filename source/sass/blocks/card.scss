@@ -1,0 +1,153 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  width: 230px;
+  padding: 0;
+  padding-bottom: 35px;
+  margin: 0 auto 30px;
+  border-radius: 15px;
+
+  background-color: $white;
+
+  @media (min-width: $screen-md) {
+    width: 220px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin: 0;
+    width: 262px;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 25px #f4f4f4;
+  }
+}
+
+.card__inner {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+
+  margin-bottom: 23px;
+}
+
+.card__img-wrap {
+  display: block;
+  flex-shrink: 0;
+
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 23px;
+  }
+}
+
+.card__img {
+  display: block;
+
+  width: 227px;
+  height: 214px;
+
+  @media (min-width: $screen-lg) {
+
+    width: 262px;
+    height: 228px;
+  }
+}
+
+.card__title {
+  margin: 0 0 16px;
+
+  font-weight: 700;
+  font-size: 20px;
+  color: $black;
+  line-height: 28px;
+}
+
+.card__description-list {
+  margin: 0 auto 5px;
+  padding: 0;
+
+  text-align: center;
+
+  list-style: none;
+}
+
+.card__description-item {
+  display: inline-block;
+
+  width: 45px;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+
+  color: $black;
+  vertical-align: top;
+  border-right: 1px solid $black;
+
+  &--2 {
+    width: 42px;
+  }
+
+  &--3 {
+    width: 55px;
+
+    border: none;
+  }
+}
+
+.card__price-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 190px;
+}
+
+.card__price {
+  flex-shrink: 0;
+
+  margin: auto 0 0 5px;
+
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: $black;
+}
+
+.card__buy {
+  position: relative;
+  flex-shrink: 0;
+
+  padding: 7px 50px 7px 33px;
+
+  width: 193px;
+
+  font-size: 14px;
+  line-height: 28px;
+  color: $white;
+  text-align: left;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: $orange;
+  border-radius: 5px;
+}
+
+.card__buy__icon {
+  position: absolute;
+  top: 11px;
+  right: 29px;
+
+  fill: $white;
+}
