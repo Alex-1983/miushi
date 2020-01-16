@@ -8,14 +8,20 @@
 
 /* blocks
 ================================*/
+@import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/burger";
 @import "blocks/site-list";
 @import "blocks/menu-user";
 @import "blocks/block-buyer";
 @import "blocks/promo";
-@import "blocks/promo-pagination";
+@import "blocks/product";
 @import "blocks/sets";
 @import "blocks/card";
 @import "blocks/field-num";
-@import "blocks/sets-pagination";
+@import "blocks/rolls";
+@import "blocks/pagination";
+@import "blocks/pizza";
+@import "blocks/wok";
+@import "blocks/add-ingredients";
+@import "blocks/offer";

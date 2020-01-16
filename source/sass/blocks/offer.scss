@@ -1,0 +1,69 @@
+.offer {
+  padding-top: 50px;
+
+  width: 100%;
+
+  background-image: url("../img/bg-offer-sm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $screen-md) {
+    padding-top: 65px;
+    padding-bottom: 70px;
+
+    background-image: url("../img/bg-offer-md.png");
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 65px;
+    padding-bottom: 70px;
+
+    background-image: url("../img/bg-offer-lg.png");
+  }
+}
+
+.offer__list-top {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto 32px;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 54px;
+  }
+}
+
+.offer__list-item {
+  margin-right: 62px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.offer__list-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $orange;
+
+  &--action {
+    color: #999999;
+  }
+}
+
+.offer__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  list-style: none;
+}

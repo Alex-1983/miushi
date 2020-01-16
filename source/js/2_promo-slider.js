@@ -1,9 +1,9 @@
 (function() {
   var promo = document.querySelector(".promo");
   var promoSlider = promo.querySelector(".promo__slider");
+  var pagination = promo.querySelector(".swiper-pagination");
   var buttonPrevious = promo.querySelector(".promo__button--prev");
   var buttonNext = promo.querySelector(".promo__button--next");
-  var pagination = promo.querySelector(".promo-pagination");
 
   var promoSwiper = new Swiper(promoSlider, {
     slidesPerView: 1,
@@ -17,9 +17,14 @@
       nextEl: buttonNext,
       prevEl: buttonPrevious
     },
+
     pagination: {
       el: pagination,
-      clickable: true
+      clickable: true,
+
+      renderBullet: function(index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
     }
   });
 

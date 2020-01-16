@@ -300,6 +300,7 @@
 .promo__pagination-wrap {
   position: relative;
 
+  width: 100%;
   min-height: 45px;
 
   background-color: $white;
@@ -308,11 +309,56 @@
   @media (min-width: $screen-md) {
     position: absolute;
 
-    bottom: 25px;
+    bottom: 30px;
 
     width: 100%;
     min-height: 20px;
 
     background-color: rgba(42, 32, 49, 0);
+  }
+
+  @media (min-width: $screen-lg) {
+    bottom: 65px;
+  }
+}
+
+.swiper-pagination {
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+
+  margin: 0 10px;
+  padding: 0;
+
+  width: 12px;
+  height: 12px;
+
+  font-size: 0;
+  vertical-align: middle;
+
+  background: transparent;
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+
+  @media (min-width: $screen-md) {
+    margin: 0 12px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  &-active {
+    opacity: 1;
+    background: $green;
+    border: none;
   }
 }

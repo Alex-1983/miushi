@@ -18,30 +18,36 @@
     <link rel="stylesheet" type="text/css" href="libs/swiper/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
     </script>
   </head>
 
   <body>
-
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-
-    <!-- header -->
-    <include src="source/templates/header.html"></include>
-
-    <!-- promo -->
-    <include src="source/templates/promo.html"></include>
-
-    <!-- sets -->
-    <include src="source/templates/sets.html"></include>
-
+    <header class="header">
+      <!-- header -->
+      <include src="source/templates/main-nav.html"></include>
+    </header>
+    <main>
+      <!-- promo -->
+      <include src="source/templates/promo.html"></include>
+      <!-- sets -->
+      <include src="source/templates/sets.html"></include>
+      <!-- rolls -->
+      <include src="source/templates/rolls.html"></include>
+      <!-- pizza -->
+      <include src="source/templates/pizza.html"></include>
+      <!-- wok -->
+      <include src="source/templates/wok.html"></include>
+      <!-- offer -->
+      <include src="source/templates/offer.html"></include>
+    </main>
     <script src="libs/picturefill/picturefill.min.js"></script>
     <script src="libs/swiper/swiper.min.js"></script>
     <script src="js/zpp.min.js"></script>
-
   </body>
 
 </html>

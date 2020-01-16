@@ -1,0 +1,21 @@
+.wok {
+  padding-bottom: 22px;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 23px;
+  }
+}
+
+.wok__list {
+  @media (min-width: $screen-md) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 50px;
+  }
+}

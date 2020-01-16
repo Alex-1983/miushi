@@ -1,11 +1,11 @@
 (function() {
-  var sets = document.querySelector(".sets");
-  var setsSlider = sets.querySelector(".sets__slider");
-  var pagination = sets.querySelector(".pagination__slider");
-  var buttonPrevious = sets.querySelector(".sets-button-prev");
-  var buttonNext = sets.querySelector(".sets-button-next");
+  var rolls = document.querySelector(".pizza");
+  var rollsSlider = rolls.querySelector(".pizza__slider");
+  var pagination = rolls.querySelector(".pagination__slider");
+  var buttonPrevious = rolls.querySelector(".pizza-button-prev");
+  var buttonNext = rolls.querySelector(".pizza-button-next");
 
-  var promoSwiper = new Swiper(setsSlider, {
+  var promoSwiper = new Swiper(rollsSlider, {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 25,
@@ -24,7 +24,7 @@
 
     navigation: {
       nextEl: buttonNext,
-      prevEl: buttonPrevious,
+      prevEl: buttonPrevious
     },
 
     pagination: {
