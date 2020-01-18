@@ -33,7 +33,7 @@ gulp.task("css", function() {
 
 gulp.task("scripts", function () {
   return gulp.src("source/js/*.js")
-  .pipe(concat("zpp.min.js"))
+  .pipe(concat("app.min.js"))
   .pipe(uglify())
   .pipe(gulp.dest("build/js"));
 });

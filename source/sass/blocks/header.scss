@@ -1,6 +1,7 @@
 .header {
   @media (min-width: $screen-lg) {
-    display: flex;
     position: relative;
+
+    display: flex;
   }
 }
