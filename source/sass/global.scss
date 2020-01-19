@@ -235,4 +235,36 @@ input[type="radio"].visually-hidden {
       }
     }
   }
+
+  &--reviews {
+    margin-bottom: 52px;
+
+    &::before {
+      margin-right: 0;
+    }
+
+    &::after {
+      margin-left: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      &::before {
+        margin-right: 45px;
+      }
+
+      &::after {
+        margin-left: 45px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      &::before {
+        margin-right: 25px;
+      }
+
+      &::after {
+        margin-left: 25px;
+      }
+    }
+  }
 }
