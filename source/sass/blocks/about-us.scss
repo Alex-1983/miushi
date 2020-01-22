@@ -1,0 +1,115 @@
+.about-us {
+  padding: 40px 15px 75px;
+
+  color: $blue-dark;
+
+  @media (min-width: $screen-md) {
+    padding: 70px 21px 190px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 145px;
+  }
+}
+
+.about-us__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 1170px;
+  }
+}
+
+.about-us__text-header {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.1px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 65px;
+
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 38px;
+
+    font-size: 24px;
+    line-height: 26px;
+
+  }
+}
+
+.about-us__bg {
+  order: 3;
+
+  width: 100%;
+  min-height: 477px;
+
+  background-image: url("../img/bg-about-us-lg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $screen-md) {
+    order: 2;
+
+    float: right;
+
+    margin-left: 35px;
+    margin-bottom: 20px;
+
+    width: 220px;
+
+    background-image: url("../img/bg-about-us.jpg");
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-left: 55px;
+
+    width: 277px;
+
+    background-image: url("../img/bg-about-us-lg.jpg");
+  }
+}
+
+.about-us__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.btn__about-us {
+  margin-top: 13px;
+}
+
+.js .about-us-hidden {
+  @media (max-width: 764px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
