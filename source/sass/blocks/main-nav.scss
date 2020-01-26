@@ -124,6 +124,7 @@
   left: -151px;
 
   background-color: rgba(255, 255, 255, 0);
+  color: rgba(76, 76, 76, 0);
 
   @media (min-width: $screen-md) {
     left: -330px;
@@ -146,6 +147,7 @@
   @media (max-width: $mobile-width-only) {
     left: 0;
     background-color: $white;
+    color: #4c4c4c;
     transition-duration: 0.8s;
   }
 }

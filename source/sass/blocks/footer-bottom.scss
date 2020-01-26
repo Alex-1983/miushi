@@ -1,0 +1,96 @@
+.footer-bottom {
+  padding-top: 45px;
+  padding-bottom: 50px;
+
+  background-color: #20353d;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+
+  @media (min-width: $screen-md) {
+    padding: 31px 8px 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 20px 0 60px;
+
+    text-align: left;
+  }
+}
+
+.footer-bottom__inner {
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $screen-md) {
+    @include container();
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 1170px;
+  }
+}
+
+.footer-bottom__wrap {
+  @media (min-width: $screen-md) {
+    @include row();
+  }
+}
+
+.footer-bottom__link {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-size: 12px;
+  color: $blue-light;
+  letter-spacing: -0.1px;
+  text-decoration: underline;
+
+  @media (min-width: $screen-md) {
+    order: 2;
+
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    flex: 0 0 347px;
+    max-width: 347px;
+  }
+
+  @media (min-width: $screen-lg) {
+    letter-spacing: 0;
+
+    flex: 0 0 650px;
+    max-width: 650px;
+  }
+}
+
+.footer-bottom__text {
+  margin: 0;
+  padding: 0;
+
+  color: $blue-light;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-md) {
+    margin-top: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    flex: 0 0 195px;
+    max-width: 195px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $screen-lg) {
+    flex: 0 0 230px;
+    max-width: 230px;
+  }
+}

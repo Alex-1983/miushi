@@ -1,0 +1,20 @@
+.footer-top {
+  @media (min-width: $screen-lg) {
+    padding-top: 70px;
+    padding-bottom: 15px;
+
+    background-color: #20353d;
+  }
+}
+
+.footer-top__inner {
+  @include container();
+
+  @media (min-width: $screen-lg) {
+    width: 1170px;
+  }
+}
+
+.footer-top__row {
+  @include row();
+}

@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="libs/swiper/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
     </script>
   </head>
 
@@ -27,7 +28,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <!-- header -->
+      <!-- main-nav -->
       <include src="source/templates/main-nav.html"></include>
     </header>
     <main>
@@ -52,6 +53,14 @@
       <!-- about-us -->
       <include src="source/templates/about-us.html"></include>
     </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <!-- footer-top -->
+        <include src="source/templates/footer-top.html"></include>
+        <!-- footer-bottom -->
+        <include src="source/templates/footer-bottom.html"></include>
+      </div>
+    </footer>
     <script src="libs/picturefill/picturefill.min.js"></script>
     <script src="libs/swiper/swiper.min.js"></script>
     <script src="js/app.min.js"></script>

@@ -97,10 +97,32 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 18px;
 
   font-size: 11px;
   line-height: 13px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url("../img/sprite.png") no-repeat;
+
+    @media (min-width: $screen-lg) {
+      top: 10px;
+      left: 3px;
+    }
+  }
+
+  &--map::before {
+    width: 11px;
+    height: 16px;
+    background-position: -10px -622px;
+  }
+
 
   @media (min-width: $screen-md) {
     margin-bottom: 18px;
@@ -122,12 +144,33 @@
 }
 
 .menu-user__email {
+  position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 18px;
 
   font-size: 11px;
   line-height: 13px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    background: url("../img/sprite.png") no-repeat;
+
+    @media (min-width: $screen-lg) {
+      top: 14px;
+      left: 6px;
+    }
+  }
+
+  &--phone::before {
+    width: 12px;
+    height: 9px;
+    background-position: -10px -593px;
+  }
 
   @media (min-width: $screen-md) {
     padding-left: 18px;
