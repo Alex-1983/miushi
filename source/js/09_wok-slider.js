@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   var wok = document.querySelector(".wok");
   var wokSlider = wok.querySelector(".wok__slider");

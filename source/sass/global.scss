@@ -19,7 +19,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   border: 0;
   vertical-align: middle;
-  white-space: nowrap;
   text-overflow: ellipsis;
   user-select: none;
   text-align: center;
@@ -49,6 +48,12 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   border: 1px solid $orange;
   border-radius: 3px;
+  text-overflow: ellipsis;
+  user-select: none;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
 
   @media (min-width: $screen-md) {
     display: none;

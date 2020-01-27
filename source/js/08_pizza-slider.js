@@ -1,11 +1,13 @@
-(function() {
-  var offer = document.querySelector(".offer");
-  var offerSlider = offer.querySelector(".offer__slider");
-  var pagination = offer.querySelector(".pagination__slider");
-  var buttonPrevious = offer.querySelector(".offer-button-prev");
-  var buttonNext = offer.querySelector(".offer-button-next");
+'use strict';
 
-  var promoSwiper = new Swiper(offerSlider, {
+(function() {
+  var rolls = document.querySelector(".pizza");
+  var rollsSlider = rolls.querySelector(".pizza__slider");
+  var pagination = rolls.querySelector(".pagination__slider");
+  var buttonPrevious = rolls.querySelector(".pizza-button-prev");
+  var buttonNext = rolls.querySelector(".pizza-button-next");
+
+  var promoSwiper = new Swiper(rollsSlider, {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 25,

@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   var promo = document.querySelector(".promo");
   var promoSlider = promo.querySelector(".promo__slider");

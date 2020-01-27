@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   var rolls = document.querySelector(".rolls");
   var rollsSlider = rolls.querySelector(".rolls__slider");

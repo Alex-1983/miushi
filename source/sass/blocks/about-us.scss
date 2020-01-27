@@ -4,11 +4,11 @@
   color: $blue-dark;
 
   @media (min-width: $screen-md) {
-    padding: 70px 21px 190px;
+    padding: 70px 21px 188px;
   }
 
   @media (min-width: $screen-lg) {
-    padding-bottom: 145px;
+    padding-bottom: 142px;
   }
 }
 
@@ -97,6 +97,10 @@
 
 .btn__about-us {
   margin-top: 13px;
+
+  @media (min-width: $screen-md) {
+    display: none;
+  }
 }
 
 .js .about-us-hidden {

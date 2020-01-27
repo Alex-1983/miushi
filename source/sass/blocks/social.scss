@@ -12,8 +12,8 @@
   justify-content: center;
 
   @media (min-width: $screen-md) {
-    flex: 0 0 207px;
-    max-width: 207px;
+    flex: 0 0 29.16%;
+    max-width: 29.16%;
     justify-content: flex-end;
     order: 3;
 
@@ -69,5 +69,7 @@
   @media (min-width: $screen-lg) {
     width: 25px;
     height: 25px;
+
+    background-color: #8d969a;
   }
 }

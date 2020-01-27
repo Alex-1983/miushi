@@ -53,14 +53,17 @@
       <!-- about-us -->
       <include src="source/templates/about-us.html"></include>
     </main>
-    <footer class="footer">
-      <div class="footer__inner">
-        <!-- footer-top -->
-        <include src="source/templates/footer-top.html"></include>
-        <!-- footer-bottom -->
-        <include src="source/templates/footer-bottom.html"></include>
-      </div>
+    <footer>
+      <!-- footer-top -->
+      <include src="source/templates/footer-top.html"></include>
+      <!-- footer-bottom -->
+      <include src="source/templates/footer-bottom.html"></include>
     </footer>
+    <script src="libs/object-fit/ofi.min.js"></script>
+    <script>
+    objectFitImages();
+
+    </script>
     <script src="libs/picturefill/picturefill.min.js"></script>
     <script src="libs/swiper/swiper.min.js"></script>
     <script src="js/app.min.js"></script>

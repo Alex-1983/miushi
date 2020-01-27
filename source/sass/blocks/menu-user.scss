@@ -4,6 +4,7 @@
     padding-top: 23px;
 
     display: flex;
+    flex-wrap: wrap;
 
     width: 900px;
   }
@@ -120,7 +121,7 @@
   &--map::before {
     width: 11px;
     height: 16px;
-    background-position: -10px -622px;
+    background-position: -10px -536px;
   }
 
 
@@ -169,7 +170,7 @@
   &--phone::before {
     width: 12px;
     height: 9px;
-    background-position: -10px -593px;
+    background-position: -10px -507px;
   }
 
   @media (min-width: $screen-md) {

@@ -1,0 +1,39 @@
+.sub-menu-dropdown {
+  @media (min-width: $screen-lg) {
+    position: relative;
+  }
+}
+
+.sub-menu {
+  @media (min-width: $screen-lg) {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+
+    padding: 20px 30px;
+
+    width: 200px;
+
+    background-color: $white;
+  }
+}
+
+.sub-menu__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+}
+
+.js .sub-menu {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.js .sub-menu-open .sub-menu {
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+}

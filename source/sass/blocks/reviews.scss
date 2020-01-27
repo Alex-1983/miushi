@@ -154,7 +154,7 @@
   &--like::before {
     width: 19px;
     height: 15px;
-    background-position: -10px -347px;
+    background-position: -10px -304px;
   }
 
   &--comment {
@@ -184,14 +184,14 @@
 
       border-style: solid;
       border-width: 6px 8px 0 0;
-      border-color: #bacada transparent transparent transparent;
+      border-color: #bacada rgba(186, 202, 218, 0) rgba(186, 202, 218, 0) rgba(186, 202, 218, 0);
     }
   }
 
   &--inform::before {
     width: 14px;
     height: 14px;
-    background-position: -10px -1091px;
+    background-position: -10px -1005px;
   }
 }
 

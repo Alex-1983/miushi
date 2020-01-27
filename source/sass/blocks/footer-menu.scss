@@ -28,23 +28,33 @@
     }
 
     &--pizza {
-      flex: 0 0 125px;
-      max-width: 125px;
+      flex: 0 0 130px;
+      max-width: 130px;
     }
   }
 }
 
 .footer-menu__title {
   position: relative;
-  margin: 0;
-  padding: 22px 52px 22px 15px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: $white;
+  padding: 21px 52px 22px 15px;
+
   background-color: #1a2d34;
   border-bottom: 2px solid #20353d;
+
+  @media (min-width: $screen-md) {
+    padding-top: 21px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 0;
+
+    font-size: 14px;
+
+    background-color: #20353d;
+  }
 
   &::after {
     content: "";
@@ -59,28 +69,29 @@
     border-top: rgba(255, 255, 255, 0);
     border-left: rgba(255, 255, 255, 0);
     transform: rotate(45deg);
-  }
 
-  @media (min-width: $screen-md) {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  @media (min-width: $screen-lg) {
-    padding: 0;
-
-    font-size: 14px;
-
-    background-color: #20353d;
-
-    &::after {
-      display: none;
+    @media (min-width: $screen-md) {
+      right: 26px;
     }
 
-    &--menu {
+    @media (min-width: $screen-lg) {
       display: none;
     }
   }
+
+  &--menu {
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+}
+
+.footer-menu__title-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: left;
 }
 
 .footer-menu__list {
@@ -155,19 +166,20 @@
   }
 }
 
-.js .accordion-open + .accordion-item {
-  @media (max-width: 1169px) {
+.js .accordion-open+.accordion-item {
+  @media (max-width: $mobile-width-only) {
     position: static;
     width: auto;
     height: auto;
     margin: 0;
     padding-top: 15px;
     padding-bottom: 20px;
+    overflow: visible;
   }
 }
 
 .js .accordion-item {
-  @media (max-width: 1169px) {
+  @media (max-width: $mobile-width-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -181,23 +193,29 @@
 }
 
 .js .accordion-open {
-  @media (max-width: 1169px) {
-    position: relative;
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 30px;
-      right: 19px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 19px;
 
-      width: 16px;
-      height: 16px;
+    width: 16px;
+    height: 16px;
 
-      border: 1px solid $white;
-      border-top: rgba(255, 255, 255, 0);
-      border-left: rgba(255, 255, 255, 0);
-      transform: rotate(225deg);
-      transition: 0.3s;
+    border: 1px solid $white;
+    border-top: rgba(255, 255, 255, 0);
+    border-left: rgba(255, 255, 255, 0);
+    transform: rotate(225deg);
+    transition: 0.3s;
+
+    @media (min-width: $screen-md) {
+      right: 26px;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
     }
   }
 }

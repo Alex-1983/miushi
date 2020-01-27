@@ -1,6 +1,6 @@
 <nav class="main-nav" id="nav">
   <div class="main-nav__item">
-    <a class="main-nav__logo">
+    <a class="main-nav__logo" tabindex="0">
       <h1 class="visually-hidden">Миюши<span>суши и роллы</span></h1>
       <picture>
         <source media="(min-width: 1170px)" srcset="img/logo-desktop.png">
@@ -24,8 +24,37 @@
       </button>
     </div>
     <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Меню</a>
+      <li class="site-list__item sub-menu-dropdown">
+        <a class="site-list__link site-list__link-menu" href="#">Меню</a>
+        <ul class="list-reset site-list__sub-menu sub-menu">
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Суши</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Гунканы</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Инари</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Супы</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Салаты</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Горячие закуски</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Десерты</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Напитки</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Дополительно</a>
+          </li>
+        </ul>
       </li>
       <li class="site-list__item">
         <a class="site-list__link" href="#">Акции и скидки</a>
@@ -41,7 +70,7 @@
       </li>
     </ul>
     <div class="menu-user">
-      <a class="m-b menu-user__link-phone" href="tel:+7 (800) 333 2 222;">
+      <a class="m-b menu-user__link-phone" href="tel:+7(800)3332222;">
         <span class="menu-user__text-phone">+7 (800) 333 2 222</span>
         <span class="menu-user__office-hours">Работаем с 11.00 до 23.00</span>
       </a>

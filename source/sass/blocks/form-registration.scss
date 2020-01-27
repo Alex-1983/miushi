@@ -1,0 +1,117 @@
+.form-registration__title {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 51px;
+  letter-spacing: -3px;
+  color: $white;
+
+  @media (min-width: $screen-md) {
+    @include col();
+
+    margin-bottom: 27px;
+
+    font-size: 53px;
+    line-height: 55px;
+  }
+}
+
+.form-registration__title br {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.form-registration {
+  @media (min-width: $screen-md) {
+    @include row();
+  }
+}
+
+.form-registration__item {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+
+  @media (min-width: $screen-md) {
+    @include col(md, 4);
+  }
+
+  @media (min-width: $screen-lg) {
+    flex: 0 0 270px;
+    max-width: 270px;
+
+    &--name {
+      margin-right: 11px;
+    }
+  }
+}
+
+.form-registration__control {
+  padding: 20px 14px 10px;
+
+  width: 100%;
+
+  color: $white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+
+  outline: 0;
+}
+
+.form-registration__control::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+}
+
+.form-registration__btn-wrap {
+  margin-top: 40px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 0;
+
+    @include col(md, 4);
+  }
+
+  @media (min-width: $screen-lg) {
+    flex: 0 0 225px;
+    max-width: 225px;
+
+    margin-left: auto;
+  }
+}
+
+.form-registration__button {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  width: 100%;
+
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  letter-spacing: 1px;
+
+  background-color: $orange;
+  text-transform: uppercase;
+
+  border-radius: 3px;
+}
+
+.form__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 14px;
+}
