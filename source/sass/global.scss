@@ -324,3 +324,8 @@ input[type="radio"].visually-hidden {
     }
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

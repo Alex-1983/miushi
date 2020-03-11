@@ -1,82 +1,50 @@
 .footer-menu__col {
   @include col();
-
   padding: 0;
 
+  border-bottom: 2px solid #20353d;
+
   @media (min-width: $screen-lg) {
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
 
     &--menu {
       flex: 0 0 230px;
+
       max-width: 230px;
     }
 
     &--sets {
       flex: 0 0 390px;
+
       max-width: 390px;
     }
 
     &--rolls {
       flex: 0 0 250px;
+
       max-width: 250px;
     }
 
     &--wok {
       flex: 0 0 170px;
+
       max-width: 170px;
     }
 
     &--pizza {
       flex: 0 0 130px;
+
       max-width: 130px;
     }
   }
 }
 
-.footer-menu__title {
+.footer-menu__accordeon-container {
   position: relative;
 
-  padding: 21px 52px 22px 15px;
-
-  background-color: #1a2d34;
-  border-bottom: 2px solid #20353d;
-
-  @media (min-width: $screen-md) {
-    padding-top: 21px;
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
   @media (min-width: $screen-lg) {
-    padding: 0;
-
-    font-size: 14px;
-
-    background-color: #20353d;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 19px;
-
-    width: 16px;
-    height: 16px;
-
-    border: 1px solid $white;
-    border-top: rgba(255, 255, 255, 0);
-    border-left: rgba(255, 255, 255, 0);
-    transform: rotate(45deg);
-
-    @media (min-width: $screen-md) {
-      right: 26px;
-    }
-
-    @media (min-width: $screen-lg) {
-      display: none;
-    }
+    position: static;
   }
 
   &--menu {
@@ -86,17 +54,77 @@
   }
 }
 
-.footer-menu__title-link {
-  font-weight: 700;
+.footer-menu h3 {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
-  color: $white;
+  padding: 23px 52px 20px 16px;
   text-align: left;
+  background-color: #1a2d34;
+  color: $white;
+
+  @media (min-width: $screen-md) {
+    padding: 22px 52px 21px 21px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+  }
+}
+
+.footer-menu__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  padding: 0;
+  font-size: 0;
+  width: 100%;
+  min-height: 66px;
+  background-color: transparent;
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 20px;
+
+    width: 14px;
+    height: 14px;
+
+    transform: rotate(45deg);
+
+    border: 1px solid $white;
+    border-top: rgba(255, 255, 255, 0);
+    border-left: rgba(255, 255, 255, 0);
+
+    @media (min-width: $screen-md) {
+      right: 26px;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
 }
 
 .footer-menu__list {
   padding-top: 15px;
   padding-bottom: 20px;
+
   background-color: #20353d;
 
   @media (min-width: $screen-lg) {
@@ -113,7 +141,6 @@
   &--price {
     @media (min-width: $screen-lg) {
       margin-right: 25px;
-
       width: 200px;
     }
   }
@@ -121,12 +148,13 @@
 
 .footer-menu__item {
   position: relative;
-  padding-left: 15px;
+
   padding-right: 62px;
+  padding-left: 17px;
 
   @media (min-width: $screen-md) {
-    padding-left: 22px;
     padding-right: 22px;
+    padding-left: 22px;
   }
 
   @media (min-width: $screen-lg) {
@@ -155,6 +183,7 @@
   &--menu {
     font-size: 14px;
     line-height: 24px;
+
     color: $white;
   }
 }
@@ -166,35 +195,39 @@
   }
 }
 
-.js .accordion-open+.accordion-item {
+.js .accordion-open .footer-menu__list {
   @media (max-width: $mobile-width-only) {
     position: static;
+
+    overflow: visible;
+
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 20px;
     width: auto;
     height: auto;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    overflow: visible;
   }
 }
 
-.js .accordion-item {
+.js .footer-menu__list {
   @media (max-width: $mobile-width-only) {
     position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    margin: -1px;
+    padding: 0;
     width: 1px;
     height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+
     white-space: nowrap;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+
+    border: 0;
   }
 }
 
-.js .accordion-open {
-  position: relative;
-
+.js .accordion-open .footer-menu__btn {
   &::after {
     content: "";
     position: absolute;
@@ -204,11 +237,12 @@
     width: 16px;
     height: 16px;
 
+    transition: 0.3s;
+    transform: rotate(225deg);
+
     border: 1px solid $white;
     border-top: rgba(255, 255, 255, 0);
     border-left: rgba(255, 255, 255, 0);
-    transform: rotate(225deg);
-    transition: 0.3s;
 
     @media (min-width: $screen-md) {
       right: 26px;

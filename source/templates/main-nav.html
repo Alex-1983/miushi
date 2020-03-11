@@ -1,5 +1,8 @@
-<nav class="main-nav" id="nav">
+<nav class="main-nav">
   <div class="main-nav__item">
+    <button class="burger main-nav__open-btn" aria-label="Показать главное меню">
+      <span>Показать главное меню</span>
+    </button>
     <a class="main-nav__logo" tabindex="0">
       <h1 class="visually-hidden">Миюши<span>суши и роллы</span></h1>
       <picture>
@@ -18,11 +21,7 @@
     </div>
   </div>
   <div class="main-nav__menu">
-    <div class="main-nav__toggler-wrapper">
-      <button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="site-list--open">
-        <span>Показать главное меню</span>
-      </button>
-    </div>
+    <button class="btn main-nav__close-btn close" type="button" aria-label="Закрыть" title="Закрыть"><span>Скрыть главное меню</span></button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item sub-menu-dropdown">
         <a class="site-list__link site-list__link-menu" href="#">Меню</a>

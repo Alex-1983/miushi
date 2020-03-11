@@ -8,6 +8,8 @@
   }
 
   @media (min-width: $screen-lg) {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 142px;
   }
 }
@@ -22,11 +24,7 @@
 
   @media (min-width: $screen-lg) {
     margin: 0 auto;
-    padding-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    width: 1170px;
+    width: 1140px;
   }
 }
 
